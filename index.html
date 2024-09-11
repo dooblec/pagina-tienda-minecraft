@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Bienvenido a la Tienda de RealmVps</h1>
+            <img src="sword-icon.png" alt="Espada" class="sword-icon">
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="login.html">Iniciar sesión</a>
+            <a href="register.html">Registrarse</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Productos Disponibles</h2>
+        <div class="product">
+            <h3>Paquete de Minerales</h3>
+            <p>Consigue minerales para tu aventura.</p>
+            <!-- Botón de PayPal para Paquete de Minerales -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="tu-email@paypal.com">
+                <input type="hidden" name="item_name" value="Paquete de Minerales">
+                <input type="hidden" name="amount" value="9.99">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="return" value="https://www.tusitio.com/gracias.html">
+                <button type="submit">Comprar ahora</button>
+            </form>
+        </div>
+        <div class="product">
+            <h3>R-Coins</h3>
+            <p>Compra R-Coins para tus necesidades en el juego.</p>
+            <!-- Botón para redirigir a rcoins.html -->
+            <a href="rcoins.html" class="btn">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <h3>Comprar Rangos</h3>
+            <p>Adquiere rangos exclusivos para tu cuenta.</p>
+            <!-- Botón para redirigir a ranks.html -->
+            <a href="ranks.html" class="btn">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <h3>Tags Personalizados</h3>
+            <p>Personaliza tu perfil con tags únicos.</p>
+            <!-- Botón de PayPal para Tags Personalizados -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="tu-email@paypal.com">
+                <input type="hidden" name="item_name" value="Tags Personalizados">
+                <input type="hidden" name="amount" value="15.99">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="return" value="https://www.tusitio.com/gracias.html">
+                <button type="submit">Comprar Tags</button>
+            </form>
+        </div>
+        <div class="product">
+            <h3>Unbans</h3>
+            <p>Elimina bans y vuelve a jugar.</p>
+            <!-- Botón para redirigir a unbans.html -->
+            <a href="unbans.html" class="btn">Comprar Unbans</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda de Minecraft</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Unban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Comprar Unban</h1>
+            <img src="sword-icon.png" alt="Espada" class="sword-icon">
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="login.html">Iniciar sesión</a>
+            <a href="register.html">Registrarse</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulario para Comprar Unban</h2>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="tu-email@paypal.com">
+            <input type="hidden" name="item_name" value="Unban">
+            <input type="hidden" name="amount" value="49.99">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="return" value="https://www.tusitio.com/gracias.html">
+            
+            <label for="username">Nombre de Usuario de Minecraft:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <button type="submit">Comprar Unban</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda de Minecraft</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Rangos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Comprar Rangos</h1>
+            <img src="sword-icon.png" alt="Espada" class="sword-icon">
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="login.html">Iniciar sesión</a>
+            <a href="register.html">Registrarse</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Selecciona tu Rango</h2>
+        <div class="product">
+            <h3>VIP</h3>
+            <p>Rango VIP con beneficios exclusivos.</p>
+            <!-- Botón de PayPal para VIP -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="tu-email@paypal.com">
+                <input type="hidden" name="item_name" value="Rango VIP">
+                <input type="hidden" name="amount" value="19.99">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="return" value="https://www.tusitio.com/gracias.html">
+                <button type="submit">Comprar VIP</button>
+            </form>
+        </div>
+        <div class="product">
+            <h3>MVP</h3>
+            <p>Rango MVP con características avanzadas.</p>
+            <!-- Botón de PayPal para MVP -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="tu-email@paypal.com">
+                <input type="hidden" name="item_name" value="Rango MVP">
+                <input type="hidden" name="amount" value="39.99">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="return" value="https://www.tusitio.com/gracias.html">
+                <button type="submit">Comprar MVP</button>
+            </form>
+        </div>
+        <div class="product">
+            <h3>MASTER</h3>
+            <p>Rango MASTER con todos los beneficios.</p>
+            <!-- Botón de PayPal para MASTER -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="tu-email@paypal.com">
+                <input type="hidden" name="item_name" value="Rango MASTER">
+                <input type="hidden" name="amount" value="59.99">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="return" value="https://www.tusitio.com/gracias.html">
+                <button type="submit">Comprar MASTER</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda de Minecraft</p>
+    </footer>
+</body>
+</html>
